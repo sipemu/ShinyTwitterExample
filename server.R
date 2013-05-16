@@ -1,9 +1,3 @@
-library(shiny)
-library(ggplot2)
-library(ROAuth)
-
-source("tools/twitteR.R")
-
 shinyServer(function(input, output) {
   
   twit <- reactive({
@@ -16,7 +10,6 @@ shinyServer(function(input, output) {
  
   
   output$plot <- renderPlot({
-     
        print(ggplot(twit()) + geom_histogram(aes(x=hourly.count), binwidth=1) + 
            facet_wrap(~date) + xlab("") + ylab("") + xlim(c(0,24)))    
   })

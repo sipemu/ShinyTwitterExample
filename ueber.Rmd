@@ -1,4 +1,4 @@
-MUON-STAT
+MUON-STAT - Statistische Dienstleistungen
 ========================================================
 
 **Autor**:
@@ -11,3 +11,7 @@ Der Quellcode kann von [GithHub](https://github.com/sipemu/ShinyTwitterExample) 
 
 **Referenzen**:
 Die App wurde mittels [R](http://www.r-project.org/) und [Shiny](http://www.rstudio.com/shiny/) erstellt
+
+**Andere Twitter Tools und Beiträge**
+https://github.com/sferik/t/blob/master/README.md
+http://www.r-bloggers.com/automated-archival-and-visual-analysis-of-tweets-mentioning-bog13-bioinformatics-rstats-and-others/

@@ -1,9 +1,6 @@
-library(shiny)
-library(shinyIncubator)
-
 shinyUI(pageWithSidebar(
   
-  headerPanel("Rudimentärer Twitter Report"),
+  headerPanel("Rudimentärer Live Twitter-Report"),
   
   sidebarPanel(h4('Einleitung'),
                helpText(
@@ -11,7 +8,7 @@ shinyUI(pageWithSidebar(
     ist lediglich möglich die Daten bis zu 7 Tage zurück zu erhalten unundebugie Anzahl 
     der abrufbaren Tweets sind je Tag auf 1.500 beschränkt."), 
                         p("Shiny ist experimentell. Nutzung auf eigene Gefahr."),
-                        p("Die Suche kann je nach Parameter lange dauern.")),
+                        p("Die Suche kann je nach Suchbegriff lange dauern.")),
     br(),
     h4('Eingabe'), textInput("TwitterInput", "Twitter-Suchbegriff:", "Stuttgart"),
                numericInput("DaysInput", "Wieviel Tage zurück (max. 7):", value=0, min=0, max=7, step=1),
