@@ -1,5 +1,5 @@
 .Rproj.user
 .Rhistory
 .RData
-.oAuth.R
-.twitoAuth.RData
+oAuth.R
+twitoAuth.RData
